@@ -23,27 +23,26 @@ using unint64 = unsigned long long int;
  
 void solve() {
 	int n; cin>>n;
-	vector<int> a(n); for(int i=0; i<n; i++) cin>>a[i];
+	int a[n]; for(int i=0; i<n; i++) cin>>a[i];
 	
-	sort(a.begin(), a.end());
+	sort(a, a+n);
+	
 	if(n==2) cout<<a[0]<<" "<<a[1];
 	else{
-	int mn = INT_MAX;
-	int ind = -1;
-	
-	for(int i=1; i<n; i++){
-		if(abs(a[i]-a[i-1]) < mn){
-		 	mn = abs(a[i]-a[i-1]);
-		 	ind =i;
+		int mn = INT_MAX, pos = -1;
+		for(int i=1; i<n; i++){
+			
+			if(mn > abs(a[i]-a[i-1])){
+				mn = abs(a[i]-a[i-1]);
+				pos = i;
+			}
+			
 		}
+		
+		for(int i=pos; i<n;i++) cout<<a[i]<<" ";
+		for(int i=0; i<pos; i++) cout<<a[i]<<" ";
 	}
-	
-	for(int i=ind; i<n; i++) cout<<a[i]<<" ";
-	
-	for(int i=0; i<ind; i++) cout<<a[i]<<" ";
-	
-	}
-	cout<<endl;
+	cout<<"\n";
 }
  
 int main()
