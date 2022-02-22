@@ -4,17 +4,12 @@
 
 ### Study Material
 
-[USACO Guide](https://usaco.guide/)
-Many good concepts are here.
-
 [Reykjavik University CP Course](https://algo.is/t-414-aflv-competitive-programming-course-2016/)
 It do have great slides as well as problems.
 
 [Stanford University CP Course](https://web.stanford.edu/class/cs97si/)
 It do have great slides.
 
-[CP Algorithms](https://cp-algorithms.com/)
-OG.
 
 
 ### Problemset

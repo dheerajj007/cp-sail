@@ -22,37 +22,24 @@ using unint64 = unsigned long long int;
 
  
 void solve() {
-	int n; cin>>n;
-	int a[n];
-	for(int i=0; i<n; i++) cin>>a[i];
-		
+	int n, w; cin >> n >> w;
+	int a[n]; for(int i=0; i<n; i++) cin >> a[i];
+	
 	sort(a, a+n);
-	int count = 1;
+	reverse(a, a+n);
 	
-	cout<<a[0];
+	int i;
+	int sum =0;
 	
-	for(int i=1; i<n; i++){
+	
+	for(i=0; i<n; i++){
 		
-
-		if(a[i]-a[i-1]==1) {
-			count++;
-			if(i==n-1){
-				cout<<(count>2?"-":" ");
-				cout<<a[i];
-			}
-		}
-		else{
-			cout<<(count>2?"-":" ");
-			cout<<a[i-1];
-			
-			count =0;
-			cout<<" "<<a[i];
-		}
-		
-		
+		sum += a[i];
+		if(sum >= w) break;
 	}
 	
-	
+	cout << (n-i)-1 << endl	;
+
  
 }
  
@@ -60,10 +47,11 @@ int main()
 {
 	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);	
 	int tc=1;
-	//cin>>tc;
+	cin>>tc;
  
 	while(tc--){
 		solve();
 	}
 	return 0;
 }
+
