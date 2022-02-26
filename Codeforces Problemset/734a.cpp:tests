@@ -1,0 +1,23 @@
+[
+	{
+		"correct_answers":
+		[
+			"Anton"
+		],
+		"test": "6\nADAAAA\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Danik"
+		],
+		"test": "7\nDDDAADA\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Friendship"
+		],
+		"test": "6\nDADADA\n"
+	}
+]

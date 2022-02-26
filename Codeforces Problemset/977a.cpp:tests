@@ -1,0 +1,16 @@
+[
+	{
+		"correct_answers":
+		[
+			"50"
+		],
+		"test": "512 4\n"
+	},
+	{
+		"correct_answers":
+		[
+			"1"
+		],
+		"test": "1000000000 9\n"
+	}
+]
