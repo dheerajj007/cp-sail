@@ -1,0 +1,16 @@
+[
+	{
+		"correct_answers":
+		[
+			"YES"
+		],
+		"test": "Hi!\n"
+	},
+	{
+		"correct_answers":
+		[
+			"NO"
+		],
+		"test": "Codeforces\n"
+	}
+]
