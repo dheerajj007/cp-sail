@@ -25,17 +25,19 @@ void solve() {
 	int n;
 	cin >> n;
 	
-	
-	string a[n];
-	int count=0;
-
-	for(int i=0; i<n; i++) cin >> a[i];
+	int prev;
+	cin >> prev;
+	n = n-1;
+	int count =0;
+	while(n--){
+		int a;
+		cin >> a;
 		
-	for(int i=1; i< n; i++){
-		if(a[i][0]!=a[i-1][1]) count++;
+		if(a!=prev) count++;
+		prev = a;
 	}
-	if(n==1) count=1;
-	cout << count;
+	
+	cout << ++count;
 	
 	
 }

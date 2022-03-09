@@ -25,16 +25,16 @@ void solve() {
 	int n; 
 	cin >> n;
 	
-	int x, y, cp =0, mx = 0; 
-	for(int i=1; i<=n; i++){
-		cin >> x >> y;
-		cp -= x;
-		cp += y;
-		if(cp > mx) mx = cp;
-	}
+	int tram = 0, max = -1;
 	
-	cout << mx;
- 
+	while(n--) {
+		int a, b;
+		cin >> a >> b;
+		tram += b;
+		tram -= a;
+		if(tram > max) max = tram;
+	}
+	cout << max;
 }
  
 int main()
