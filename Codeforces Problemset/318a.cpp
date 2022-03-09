@@ -25,14 +25,16 @@ void solve() {
 	int64 n, k;
 	cin >> n >> k;
 	
-	int64 h = n/2;
-	
-	if(n%2==1) h++;
+	int64 h = ceil(1.0*n/2);
 	
 	if(k<=h){
-		cout << (k*2)-1;
+		cout << ((k*2)-1);
 	}
-	else cout << (k/2)+1;
+	else{
+		int64 res = k-h;
+		cout << res*2;
+	}
+	
 	
  
 }
