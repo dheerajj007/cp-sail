@@ -1,0 +1,16 @@
+[
+	{
+		"correct_answers":
+		[
+			"Caps"
+		],
+		"test": "cAPS\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Lock"
+		],
+		"test": "Lock\n"
+	}
+]
