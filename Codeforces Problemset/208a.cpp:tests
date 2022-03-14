@@ -1,0 +1,19 @@
+[
+	{
+		"correct_answers":
+		[
+			"ABC"
+		],
+		"test": "WUBWUBABCWUB\n"
+	},
+	{
+		"correct_answers":
+		[
+			"WE ARE THE CHAMPIONS MY FRIEND"
+		],
+		"test": "WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB\n"
+	},
+	{
+		"test": "RWUBWUBWUBLWUB\n"
+	}
+]
