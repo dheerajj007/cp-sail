@@ -5,26 +5,26 @@ using namespace std;
 #define ll long long
 
 void solve(){
-	string a;
+	string a, ans;
 	cin >> a;
-	int pos = a.find("WUB");
 	
-	while(pos!=string::npos){
-		a.erase(pos, 3);
-		a.insert(pos, " ");
-		pos = a.find("WUB");
+	bool f;
+	
+	for(int i=0; i<a.length(); i++){
+		if(a.substr(i, 3)=="WUB"){
+			i+=2;
+			if(f){
+				ans.push_back(' ');
+				f=0;
+			}
+		}
+		else{
+			ans.push_back(a[i]);
+			f=1;
+		}
 	}
-	// if(a[0]==' ')
-	// a.erase(0, 1);
-
-	// for(int i=1; i<a.length(); i++){
-	// 	if(a[i]==' ' and a[i-1]==' '){
-	// 		a.erase(i, 1);
-	// 	}
-		
-		
-	// }
-	cout << a;
+	
+	cout << ans;
 }
  
 int main(){
