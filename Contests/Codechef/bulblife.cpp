@@ -5,14 +5,27 @@ using namespace std;
 #define ll long long
 
 void solve(){
+	ll n, x;
+	cin >> n >> x;
+
+	ll sum = 0;
+	ll p = n-1;
+	while(p--){
+		ll a;
+		cin >> a;
+		sum += a;
+	}
+
+	ll final = (n*x - sum);
+	if(final < 0) cout << "0\n";
+	else cout << final << endl;
+
+
+	
 	
 }
  
 int main(){
-#ifndef ONLINE_JUDGE
-	freopen("input1.txt", "r", stdin);
-	freopen("output1.txt", "w", stdout);
-#endif
 	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);	
 	
 	int tc=1;
@@ -21,4 +34,3 @@ int main(){
 	while(tc--) solve();
 	return 0;
 }
-
