@@ -6,22 +6,19 @@ int main(){
 	getline(cin, a);
 	int ch[26] = {0};
 
-	for(char i:a){
-		cout << i << " " ;
-		if(i>='a' or i<='z'){
-			
-			cout << i << " ";
-			//ch[i-'a']++;
-		}
+	if(a.length()<3) {
+		cout << "0";
+		return 0;
 	}
 
-	int final = 0;
+	for(int i=1; i<a.length(); i+=3){
+		ch[a[i]-'a']++;
+		
+	}
+	int count = 0;
 	for(int i=0; i<26; i++){
-		cout << ch[i] << " ";
-		if(ch[i] > 0) final++;
+		if(ch[i]>0) count++;
 	}
-
-	//cout << final;
-
+	cout << count;
 	return 0;
 }
