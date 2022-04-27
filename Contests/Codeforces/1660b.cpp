@@ -9,31 +9,17 @@ void solve(){
 	cin >> n;
 	ll a[n];
 	for(int i=0; i<n; i++) cin >> a[i];
+	if(n==1){
+		if(a[0] > 1) cout << "NO";
+		else cout << "YES";
+		cout << endl;
+		return;
+	}
 
 	sort(a, a+n);
-
-	if(n==1){
-		cout << "NO\n";
-		return;
-	}
-	if(n==2){
-		if(abs(a[0]-a[1]) > 1){
-			cout << "NO\n";
-		}
-		else cout << "YES\n";
-		return;
-	}
-	ll i=n-3;
-	ll s = a[n-1] - a[n-2];
-	while(i){
-		if(a[i] >  s){
-			cout << "NO\n";
-			return;
-		}
-		s -= a[i];
-		i--;
-	}
-	cout << "YES\n";
+	if(a[n-2] + 1 < a[n-1]) cout << "NO";
+	else cout << "YES";
+	cout << "\n";
 }
  
 int main(){
