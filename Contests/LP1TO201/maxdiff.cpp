@@ -5,6 +5,25 @@ using namespace std;
 #define ll long long
 
 void solve(){
+	int n, s;
+	int maxdiff = INT_MIN;
+	int l = 0, h = n;
+	cin >> n >> s;
+
+	while(l<h){
+		if(l+h==s){
+			int diff = abs(h-l);
+			maxdiff = max(diff, maxdiff);
+		}
+		else if(l+h>s){
+			h--;
+		}
+		else{
+			l++;
+		}
+	}
+
+	cout << maxdiff << endl;
 	
 }
  
@@ -17,4 +36,5 @@ int main(){
 	while(tc--) solve();
 	return 0;
 }
+
 

@@ -5,6 +5,9 @@ using namespace std;
 #define ll long long
 
 void solve(){
+	int a, b, x;
+	cin >> a >> b >> x;
+	cout << (b-a)/x << endl;
 	
 }
  
@@ -17,4 +20,3 @@ int main(){
 	while(tc--) solve();
 	return 0;
 }
-
