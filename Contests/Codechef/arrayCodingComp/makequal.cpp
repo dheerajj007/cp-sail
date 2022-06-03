@@ -5,7 +5,11 @@ using namespace std;
 #define ll long long
 
 void solve(){
-	cout << "heLlo";
+	int n;
+	cin >> n;
+	int a[n];
+	for(int i=0; i<n; i++)
+		cin >> a[i];
 	
 }
  
@@ -13,9 +17,8 @@ int main(){
 	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);	
 	
 	int tc=1;
-	//cin>>tc;
+	cin>>tc;
  
 	while(tc--) solve();
 	return 0;
 }
-

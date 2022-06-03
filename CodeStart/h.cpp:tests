@@ -1,0 +1,9 @@
+[
+	{
+		"correct_answers":
+		[
+			"ate tea eat\nant nat\nabe"
+		],
+		"test": "6 3\nate tea ant abe nat eat\n"
+	}
+]

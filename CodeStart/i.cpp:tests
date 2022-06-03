@@ -1,0 +1,26 @@
+[
+	{
+		"correct_answers":
+		[
+			"8"
+		],
+		"test": "3\ntall\nredd\nllat\n"
+	},
+	{
+		"correct_answers":
+		[
+			"3"
+		],
+		"test": "4\nada\nsee\ntea\nmee\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "4\nentry\noutro\nfixes\ndovie\n"
+	},
+	{
+		"test": "4\ntall\ntall\nllat\nllat\n"
+	}
+]
