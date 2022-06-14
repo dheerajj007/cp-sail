@@ -4,18 +4,20 @@ using namespace std;
 #define all(x) (x).begin(), (x).end()
 #define ll long long
 
+ll rec(ll n){
+	if(n==0){
+		return 0;
+		
+	}
+	ll res = rec(n-1);
+	ll a = (n-1)+2*(n);
+	return a + res;
+}
+
 void solve(){
-	string a, b;
-	cin >> a >> b;
-	reverse(a.begin(), a.end());
-	reverse(b.begin(), b.end());
-	
-	int x =  stoi(a);
-	int y = stoi(b);
-	string final = to_string(x+y);
-	reverse(final.begin(), final.end());
-	int z= stoi(final);
-	cout << z<< endl;
+	ll n;
+	cin >> n;
+	cout << rec(n) << endl;
 }
  
 int main(){

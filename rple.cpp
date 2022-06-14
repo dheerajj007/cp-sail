@@ -5,17 +5,25 @@ using namespace std;
 #define ll long long
 
 void solve(){
-	string a, b;
-	cin >> a >> b;
-	reverse(a.begin(), a.end());
-	reverse(b.begin(), b.end());
+	int n, r;
+	cin >> n >> r;
+	vector<pair<int, int>> a;
+	for(int i=0; i<n; i++){
+		int x, y;
+		cin >> x >> y;
+		a[i]= {x,y};
+		
+	}
 	
-	int x =  stoi(a);
-	int y = stoi(b);
-	string final = to_string(x+y);
-	reverse(final.begin(), final.end());
-	int z= stoi(final);
-	cout << z<< endl;
+	cin >> a >> b;
+	
+	for(int i=0; i<n; i++)
+		cin >> a[i];
+	
+	for(int j=0; j<n; j++
+		)
+	
+	
 }
  
 int main(){
