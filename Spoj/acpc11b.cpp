@@ -11,18 +11,28 @@ void solve(){
 	for(int i=0; i<m; i++)
 		cin >> a[i];
 	
+	cin >> n;
 	int b[n];
 	for(int i=0; i<n; i++)
 		cin >> b[i];
 	
-	int ans = INT_MAX;
-	for(int i:a){
-		for(int j:b){
-			int diff = abs(i-j);
-			cout << diff << endl;
-			ans = min(diff, ans);
-		}
+	sort(a, a+n);
+	
+	int ans= INT_MAX;
+	for(int i:b){
+		int x = a[lower_bound(a, a+n, i)];
+		int diff = abs(i-x);
+		ans = min(diff, ans);
 	}
+	
+	// int ans = INT_MAX;
+	// for(int i:a){
+	// 	for(int j:b){
+	// 		int diff = abs(i-j);
+	// 		cout << diff << endl;
+	// 		ans = min(diff, ans);
+	// 	}
+	// }
 	
 	cout << ans << endl;
 }
