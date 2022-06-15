@@ -1,0 +1,12 @@
+[
+	{
+		"correct_answers":
+		[
+			"z\naa\n-1\nxyyx"
+		],
+		"test": "4\n1 1\n2 1\n3 3\n4 2\n"
+	},
+	{
+		"test": "1\n5 3"
+	}
+]

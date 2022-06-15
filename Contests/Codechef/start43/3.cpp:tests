@@ -1,0 +1,9 @@
+[
+	{
+		"correct_answers":
+		[
+			"A\nAG\nCCC\nCT"
+		],
+		"test": "4\n2\n00\n4\n0011\n6\n101010\n4\n1001\n"
+	}
+]
