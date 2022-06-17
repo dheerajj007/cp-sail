@@ -1,0 +1,9 @@
+[
+	{
+		"correct_answers":
+		[
+			"6\n1\n4"
+		],
+		"test": "3\na1 h8\na1 c2\nh8 c3\n"
+	}
+]
