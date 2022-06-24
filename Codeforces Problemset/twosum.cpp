@@ -5,24 +5,24 @@ using namespace std;
 #define ll long long
 
 void solve(){
-	int n, r;
-	cin >> n >> r;
-	vector<pair<int, int>> a;
-	for(int i=0; i<n; i++){
-		int x, y;
-		cin >> x >> y;
-		a[i]= {x,y};
-		
-	}
-	
-	cin >> a >> b;
-	
+	ll n, x;
+	cin >> n >> x;
+	ll a[n];
 	for(int i=0; i<n; i++)
 		cin >> a[i];
-	
-	for(int j=0; j<n; j++
-		)
-	
+
+	map<int, int> m;
+
+	for(int i=0; i<n ;i++){
+		ll y = x-a[i];
+		if(m.count(y)){
+			cout << m[y]+1 << " " << i+1;
+			return;
+		}
+		 else 
+			 m[a[i]] =i;
+	}
+	cout << "IMPOSSIBLE";
 	
 }
  
@@ -30,8 +30,10 @@ int main(){
 	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);	
 	
 	int tc=1;
-	cin>>tc;
+	//cin>>tc;
  
 	while(tc--) solve();
 	return 0;
 }
+
+
