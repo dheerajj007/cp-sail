@@ -5,25 +5,23 @@ using namespace std;
 #define ll long long
 
 void solve(){
-	string a;
-	cin >> a;
-	set<char> s;
-	int ans = 1;
-
-	for(int i=0; i<a.length(); i++){
-		if(!s.count(a[i]) and s.size()==3){
-				ans++;
-				s.clear();
-
-		}
-		s.insert(a[i]);
-
-
-
+	int n;
+	cin >> n;
+	int a[n];
+	int sum =0;
+	for(int i=0; i<n; i++){
+		int x;
+		cin >> x;
+		sum += x;
 	}
-	cout << ans << endl;
-			
-	
+	if(sum==n) cout << "0\n";
+	else if(sum>n){
+		cout << sum - n << endl;
+	}
+	else{
+		cout << "1\n";
+	}
+
 }
  
 int main(){
