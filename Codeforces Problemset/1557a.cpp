@@ -13,6 +13,16 @@ void solve(){
 	for(int i=0; i<n; i++){
 		cin >> a[i];
 	}
+	sort(a, a+n);
+	double sum =0.0;
+	for(int i=0;i<n-1; i++)
+		sum += a[i];
+
+	double avg = sum/(n-1);
+	//cout << sum  << endl;
+
+	double final = a[n-1] + avg;
+	cout << final << endl;
 
 
 
