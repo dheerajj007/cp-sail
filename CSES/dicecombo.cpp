@@ -5,21 +5,23 @@ using namespace std;
 #define ll long long
 const ll MOD = 1e9 + 7;
 
-
-ll f(ll n, vector<ll> &dp){
+ll f(ll n, vector<ll>& dp){
 	if(n==0) return 1;
 	if(n<0) return 0;
 
+	ll ans =0;
 	if(dp[n]!=-1) return dp[n];
 
-	int ans =0;
 	for(int i=1; i<=6; i++){
 		if(i<=n){
-			ans= (ans+f(n-i, dp))%MOD;
+			ans = (ans+f(n-i, dp))%MOD;
 		}
 	}
 	return dp[n] = ans;
+
 }
+
+
 
 void solve(){
 	ll n;
