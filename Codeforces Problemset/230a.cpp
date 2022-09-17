@@ -13,7 +13,6 @@ void solve(){
 	int s, n;
 	cin >> s >> n;
 	vector<pair<int, int>> a(n);
-	sort(a.begin(), a.end());
 	
 	for(int i=0; i<n; i++){
 		int x, y;
@@ -21,8 +20,9 @@ void solve(){
 		a[i] = {x, y};
 	}
 
+	sort(a.begin(), a.end());
+
 	for(auto i:a){
-		cout << i.first << "  "  << i.second << endl;
 		if(i.first < s){
 			s += i.second;
 
